@@ -1,0 +1,80 @@
+<com.ljgchina.material.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyboardLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/id_logo_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo_login"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_logo_imageview"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/textfield_et_char_counter"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_error="输入的手机号过长"
+            app:et_inputId="@+id/textfield_et_char_counter_input"
+            app:et_labelTextColor="@drawable/color_label"
+            app:et_supportMaxChars="11"
+            app:et_supportMode="charCounter"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/textfield_et_helper"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_inputId="@+id/textfield_et_helper_input"
+            app:et_labelTextColor="@drawable/color_label"
+            app:et_supportMode="helper"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+
+        <com.rey.material.widget.Button
+            style="@style/FlatColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:rd_enable="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="注册律金刚" />
+
+
+</com.ljgchina.material.KeyboardLayout>
