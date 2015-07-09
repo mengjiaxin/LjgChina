@@ -15,6 +15,14 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        init();
+
+
+
+    }
+
+    private void init() {
         mImageView = (ImageView) findViewById(R.id.id_logo_imageview);
         KeyboardLayout mainView = (KeyboardLayout) findViewById(R.id.keyboardLayout1);
         mainView.setOnkbdStateListener(new KeyboardLayout.onKybdsChangeListener() {
@@ -32,7 +40,6 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         });
-
     }
 
 
